@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dangerous Dreams – Table of Contents</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Vertical neon timeline ToC */
+    .toc-vertical {
+      padding: 8px 0;
+    }
+
+    .toc-v-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-left: 2px solid rgba(233, 69, 96, 0.35);
+    }
+
+    .toc-v-item {
+      padding: 14px 0 14px 16px;
+      position: relative;
+    }
+
+    .toc-v-item::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 22px;
+      width: 10px;
+      height: 10px;
+      background: #e94560;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(233, 69, 96, 0.8);
+    }
+
+    /* Compact spacing for single-entry items (Author's Note, Foreword) */
+    .toc-v-item.single {
+      padding: 6px 0 6px 16px;
+    }
+
+    .toc-v-item.single::before {
+      top: 14px;
+    }
+
+    .toc-v-head {
+      font-family: 'Orbitron', sans-serif;
+      color: #e94560;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .toc-v-head a {
+      color: inherit;
+      text-decoration: none;
+      padding: 6px 8px;
+      display: inline-block;
+      border-left: 4px solid transparent;
+      border-radius: 6px;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .toc-v-head a:hover {
+      transform: translateX(2px);
+      border-left-color: #e94560;
+      background: #16213e;
+    }
+
+    .toc-v-item a.sub-link {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 6px 8px;
+      margin: 4px 0;
+      background: #0f3460;
+      border-left: 4px solid transparent;
+      border-radius: 6px;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .toc-v-item a.sub-link:hover {
+      transform: translateX(2px);
+      border-left-color: #e94560;
+      background: #16213e;
+    }
+
+    /* Title + subtitle */
+    .header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      margin: 0;
+      color: #e94560;
+    }
+
+    .header h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      margin: 0;
+      color: #a9def9;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="book-title">
+        <span class="author">Gregory Gaal's</span>
+        <span class="title">Dangerous Dreams</span>
+        <span class="subtitle">Table of Contents</span>
+    </h1>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <nav class="toc-vertical" aria-label="Table of Contents">
+        <ul class="toc-v-list">
+
+          <li class="toc-v-item single">
+            <div class="toc-v-head">
+              <a href="chapters/00-authors-note.html#top">Author’s Note</a>
+            </div>
+          </li>
+
+          <li class="toc-v-item single">
+            <div class="toc-v-head">
+              <a href="chapters/00-foreword.html#top">Foreword</a>
+            </div>
+          </li>
+
+          <li class="toc-v-item">
+            <div class="toc-v-head">
+              <a href="chapters/01-the-case-of-the-sentient-machine.html#part-1">I. The Case of the Sentient Machine</a>
+            </div>
+            <a class="sub-link" href="chapters/01-the-case-of-the-sentient-machine.html#ch-1">1. The Slave</a>
+            <a class="sub-link" href="chapters/01-the-case-of-the-sentient-machine.html#ch-2">2. Scorched Earth and Distant Worlds</a>
+            <a class="sub-link" href="chapters/01-the-case-of-the-sentient-machine.html#ch-3">3. Return to the City</a>
+          </li>
+
+<!--
+          <li class="toc-v-item">
+            <div class="toc-v-head">
+              <a href="chapters/02-the-case-of-the-wrong-cat.html#part-2">II. The Case of the Wrong Cat</a>
+            </div>
+            <a class="sub-link" href="chapters/02-the-case-of-the-wrong-cat.html#ch-4">4. Traces in the Grid</a>
+            <a class="sub-link" href="chapters/02-the-case-of-the-wrong-cat.html#ch-5">5. On the Trail of Ghosts</a>
+            <a class="sub-link" href="chapters/02-the-case-of-the-wrong-cat.html#ch-6">6. The Duel</a>
+            <a class="sub-link" href="chapters/02-the-case-of-the-wrong-cat.html#ch-7">7. The Toll of Treachery</a>
+          </li>
+
+          <li class="toc-v-item">
+            <div class="toc-v-head">
+              <a href="chapters/03-the-man-who-cast-three-shadows.html#part-3">III. The Man Who Cast Three Shadows</a>
+            </div>
+            <a class="sub-link" href="chapters/03-the-man-who-cast-three-shadows.html#ch-8">8. Clues in the Scaffold</a>
+            <a class="sub-link" href="chapters/03-the-man-who-cast-three-shadows.html#ch-9">9. The Unexpected Gift</a>
+            <a class="sub-link" href="chapters/03-the-man-who-cast-three-shadows.html#ch-10">10. In the Lair of the Philosopher</a>
+            <a class="sub-link" href="chapters/03-the-man-who-cast-three-shadows.html#ch-11">11. A Hard-Earned Truce</a>
+            <a class="sub-link" href="chapters/03-the-man-who-cast-three-shadows.html#ch-12">12. Shadowfox</a>
+          </li>
+
+          <li class="toc-v-item">
+            <div class="toc-v-head">
+              <a href="chapters/04-the-man-with-no-name-and-no-face.html#part-4">IV. The Man with No Name and No Face</a>
+            </div>
+            <a class="sub-link" href="chapters/04-the-man-with-no-name-and-no-face.html#ch-13">13. Pursuit in the Dark</a>
+            <a class="sub-link" href="chapters/04-the-man-with-no-name-and-no-face.html#ch-14">14. Preparing the Snare</a>
+            <a class="sub-link" href="chapters/04-the-man-with-no-name-and-no-face.html#ch-15">15. Betrayal</a>
+            <a class="sub-link" href="chapters/04-the-man-with-no-name-and-no-face.html#ch-16">16. The Fall</a>
+          </li>
+
+
+          <li class="toc-v-item single">
+            <div class="toc-v-head">
+              <a href="chapters/99-appendix.html#top">Appendix</a>
+            </div>
+          </li>
+-->
+
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Gregory Gaal</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

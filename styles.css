@@ -1,0 +1,382 @@
+/* Base Style */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1a1a2e;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #e94560;
+}
+
+/* Layout */
+.container {
+    max-width: 800px; /* Max width for widescreen */
+    width: 100%; /* Full width for smaller screens */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: #0f3460;
+    color: #e94560;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .author {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: #ffffff; /* neutral white so it doesn’t compete with the title */
+  font-weight: normal;
+}
+
+.part-header h1 {
+  margin-bottom: 4px;
+}
+.part-header h2 {
+  margin-top: 8px;
+}
+.mini-toc a {
+  color: #a9def9;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(169, 222, 249, 0.6);
+  padding-bottom: 2px;
+}
+.mini-toc a:hover {
+  color: #e94560;
+  border-bottom-color: #e94560;
+}
+
+
+
+/* Main Content */
+.content {
+    padding: 20px;
+    background: #16213e;
+    margin-bottom: 20px;
+}
+
+/* Images */
+.img-responsive {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image within its container */
+}
+
+.image-explanation {
+    color: #a9def9; /* Lighter shade for distinction */
+    font-size: 0.9em; /* Slightly smaller than the main text */
+    text-align: center; /* Optionally center the text */
+    margin-top: 10px; /* Space above the text */
+    margin-bottom: 20px; /* Space below the text */
+    padding: 5px; /* Padding around the text */
+    background-color: #16213e; /* Background color similar to content area */
+    border-radius: 5px; /* Optional: rounded corners for aesthetic */
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/ /* Optional: subtle shadow for depth */
+}
+
+.quote-box {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the text box */
+/* Style for the text box and accordion */
+.text-box, .accordion-item {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #e94560;
+    /* Additional styling as needed */
+}
+
+/* Styling for accordion titles */
+.accordion-title h2 {
+    cursor: pointer;
+    margin: 0; /* Remove default margins from h2 */
+    /* Additional styling for the title */
+}
+
+/* Styling for accordion content */
+.accordion-content {
+    display: none; /* Hide content by default */
+    padding-top: 10px; /* Space between title and content */
+    /* Additional styling for the content */
+}
+
+.accordion-content.active {
+    display: block; /* Show content when active */
+}
+
+/* Optional: Style for hover effect on the title */
+.accordion-title h2:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+
+/* Styling for unordered lists within text boxes */
+.accordion-content ul {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 20px; /* Adjust as needed */
+}
+
+.accordion-content ul li {
+    padding-bottom: 10px; /* Space between list items */
+    position: relative; /* Needed for custom bullet positioning */
+    font-size: 0.9em; /* Slightly smaller font size for list items */
+}
+
+/* Custom bullet style */
+.accordion-content ul li:before {
+    content: '•'; /* Unicode character for bullet */
+    color: #e94560; /* Bullet color */
+    font-size: 1.2em; /* Bullet size */
+    position: absolute; /* Positioning relative to list item */
+    left: -20px; /* Horizontal position of bullet */
+    top: 0; /* Vertical position of bullet */
+}
+
+
+
+/* Initialize counter in the ordered list container */
+.accordion-content ol {
+    counter-reset: item; /* Initialize the counter named 'item' */
+    list-style-type: none; /* Removes default list numbers */
+    padding-left: 40px; /* Adjust as needed for indentation */
+}
+
+/* Styling for ordered list items */
+.accordion-content ol > li {
+    counter-increment: item; /* Increment the counter */
+    padding-bottom: 10px; /* Space between list items */
+    position: relative; /* Needed for custom list marker positioning */
+    font-size: 0.9em; /* Slightly smaller font size for list items */
+}
+
+/* Custom list marker style for ordered lists */
+.accordion-content ol > li:before {
+    content: counter(item) '.'; /* Display the counter */
+    color: #e94560; /* Marker color, matching the accent */
+    font-size: 1em; /* Marker size */
+    position: absolute; /* Positioning relative to list item */
+    left: -40px; /* Horizontal position of marker */
+    top: 0; /* Vertical position of marker */
+}
+
+/* Continue with the existing styles for unordered lists and other elements */
+
+
+.accordion-title h3 {
+    cursor: pointer; /* Indicates the title is clickable */
+    /* Additional styling for the title */
+}
+
+.accordion-content {
+    display: none; /* Hide content by default */
+    /* Additional styling for the content */
+}
+
+.accordion-content.active {
+    display: block; /* Show content when active */
+}
+
+
+
+.scene-separator {
+    text-align: center; /* Centers the separator on the page */
+    margin: 20px 0; /* Adds space above and below the separator */
+    font-size: 1.5em; /* Adjusts the size of the stars */
+    color: #e94560; /* Sets the color of the stars, matching the accent color */
+}
+
+
+
+
+
+/* Under Construction segments */
+.uc-header {
+    color: #16213e;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: calc(1em * 0.875);
+    background-color: #83AFE5;
+    border: 1px solid #83AFE5;
+    padding: 0.5em;
+    /*margin: 1em 0em -1em 0em;*/
+}
+
+.uc-content {
+    color: #FF8A65;
+    background-color: #1a1a2e;
+    border: 1px solid #83AFE5;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+
+/* General style for the table */
+.styled-table {
+    width: 100%; /* Set the table width */
+    border-collapse: collapse; /* Collapses border spacing */
+    margin-top: 20px; /* Space above the table */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+.styled-table td {
+    padding: 10px; /* Padding inside cells */
+    border: 1px solid #0f3460; /* Deep blue border for the cells */
+    color: #fff; /* White text for better contrast */
+    /*background-color: #16213e;*/ /* Dark blue background for consistency */
+}
+
+/* Specific style for the first column */
+.styled-table td:first-child {
+    font-family: 'Orbitron', sans-serif; /* Futuristic styled font if available */
+    font-size: 1.2em; /* Larger text for emphasis */
+    font-weight: bold; /* Bold font for emphasis */
+    background-color: #e94560; /* Vibrant red background */
+    color: #ffffff; /* White text for contrast */
+    vertical-align: top;
+}
+
+/* Regular text style for the other columns */
+.styled-table td:not(:first-child) {
+    font-family: 'Arial', sans-serif; /* Regular text font */
+    font-size: 1em; /* Standard text size */
+    /*background-color: #16213e;*/ /* Consistent with other design elements */
+}
+
+
+
+/* Visual clone of .text-box */
+.mini-box {
+  background: #0f3460;
+  color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #e94560;
+}
+
+/* Visual clone of .accordion-title h2 */
+.mini-title h2 {
+  cursor: default;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #e94560;
+}
+
+/* Body area */
+.mini-body { padding-top: 10px; }
+
+/* Native ordered list markers so start="4" works */
+.mini-body ol {
+  list-style: decimal;
+  padding-left: 40px;
+  margin: 0;
+}
+
+/* Keep it simple. No counters, no pseudo markers */
+.mini-body ol > li {
+  position: static;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+.mini-body ol > li::before { content: none; }
+
+/* Links, matching your toc style */
+.mini-body a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(233, 69, 96, 0.35);
+  padding-bottom: 2px;
+}
+.mini-body a:hover {
+  color: #e94560;
+  border-bottom-color: #e94560;
+}
+
+
+.dialogue-block {
+  border-left: 3px solid #a9def9;
+  padding-left: 0.8em;
+  margin: 1.2em 0;
+}
+
+.dialogue-block p {
+  margin: 0.2em 0;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #0f3460;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%; /* Full width for mobile */
+        padding: 0 10px; /* Optional padding for small screens */
+    }
+
+    .header, .footer {
+        padding: 10px 0;
+    }
+}
+
+
+/* ===========================
+   Three-line Book Title
+   =========================== */
+
+.book-title {
+    text-align: center;
+    line-height: 1.0;
+    margin: 20px 0 30px 0;
+}
+
+.book-title span {
+    display: block;
+}
+
+.book-title .author {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #e94560;
+    margin: 0 0 8px 0;
+}
+
+.book-title .title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.book-title .subtitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #e94560;
+    margin: 0;
+}
